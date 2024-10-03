@@ -1,0 +1,59 @@
+#Mainheader {
+  @include position-fixed;
+  z-index: 100;
+}
+
+.Mainheader__nav {
+  @include flex-around;
+  background-color: var(--mainDarkblue-color);
+  color: var(--white-color);
+  padding: 1rem;
+  box-shadow: var(--shadow-main);
+
+  .Mainheader__title {
+    font-weight: 800;
+    font-family: var(--main-font);
+  }
+
+  .Mainheader__ul {
+    @include flex-between;
+    font-family: var(--main-font);
+    gap: 80px;
+    position: relative;
+  }
+}
+
+// 네이게이션 애니메이션 포인트
+ul.topBotomBordersOut a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-family: var(--main-font);
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+ul.topBotomBordersOut a::before,
+ul.topBotomBordersOut a::after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: var(--white-color);
+  content: '';
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+ul.topBotomBordersOut a:before {
+  bottom: 4px;
+  transform: translateY(10px);
+}
+
+ul.topBotomBordersOut a:hover:before,
+div.topBotomBordersOut a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}

@@ -1,0 +1,18 @@
+// 임시로 만듬
+#Mainmap {
+  height: 100vh;
+}
+
+.Mainmap__section {
+  @include flex-center;
+  color: var(--white-color);
+  background-color: var(--subSilver-color);
+
+  .Mainmap__map {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: var(--shadow-main);
+    width: 80%;
+    height: 600px;
+  }
+}

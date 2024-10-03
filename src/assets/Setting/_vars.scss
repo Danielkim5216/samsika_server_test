@@ -1,0 +1,27 @@
+:root {
+  //폰트
+  --main-font: 'DoHyeon';
+  font-family: var(--main-font);
+
+  //색상
+  --mainDarkblue-color: #112c68;
+  --mainLightblue-color: #0091cf;
+  --subDarkgreen-color: #373c35;
+  --subGold-color: #95815e;
+  --subSilver-color: #91a4a3;
+  --subLightgray-color: #bdbdb7;
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  //쉐도우
+  --shadow-main: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --shadow-border: rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgb(51, 51, 51) 0px 0px 0px 3px;
+  --shadow-sub: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
